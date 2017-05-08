@@ -1,3 +1,5 @@
+jQuery(function($)
+{
 $(document).ready(function() {
 
 //sliders
@@ -146,4 +148,6 @@ $(document).ready(function() {
     $(this).siblings('.contact_form').slideToggle(300);
   })
     
+});
+
 });

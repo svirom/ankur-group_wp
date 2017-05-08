@@ -1,3 +1,5 @@
+jQuery(function($)
+{
 $(document).ready(function() {
 
 //contacts form
@@ -81,3 +83,5 @@ $(document).ready(function() {
   }
 
 })
+
+});
