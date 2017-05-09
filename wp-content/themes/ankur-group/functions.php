@@ -1,5 +1,7 @@
 <?php
 
+require_once 'widgets/main_image.php';
+
 remove_action( 'wp_head', 'wp_generator' );
 remove_action( 'wp_head', 'wlwmanifest_link' );
 remove_action( 'wp_head', 'rsd_link' );
@@ -32,6 +34,7 @@ function ggl_load_styles() {
   }
 }
 add_action('wp_enqueue_scripts', 'ggl_load_styles');
+
 //Add styles and scripts
 add_action( 'wp_enqueue_scripts', function () {
 	wp_enqueue_style( 'awesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
@@ -48,6 +51,16 @@ add_action( 'wp_enqueue_scripts', function () {
 add_action( 'wp_enqueue_scripts', function () {
  	wp_enqueue_script( 'script3', get_template_directory_uri() . '/js/custom.js', array('jquery') );
 } );
+add_action( 'wp_enqueue_scripts', function () {
+ 	wp_enqueue_script( 'script4', get_template_directory_uri() . '/js/image-widget.js', array('jquery') );
+} );
 
+//Main Menu
+add_action( 'after_setup_theme', function () {
+	register_nav_menus( array( 
+		'main' => 'Main menu',
+		'social' => 'Social menu' 
+	) );
+} );
 
 ?>

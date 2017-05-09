@@ -1,5 +1,9 @@
 <?php get_header(); ?>
-
+<?php the_post(); ?>
+<?php the_content(); ?>
+<?php /*
+Template Name: Standart Page
+*/ ?>
 <!-- Main Image section -->
     <div class="container main_image">
         <img src="img/main_image.png" class="main_img">

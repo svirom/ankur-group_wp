@@ -40,24 +40,21 @@
                         <option>Pt</option>
                         <option>Ru</option>
                     </select>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>         
-                    </ul>
+                    <?php 
+                        wp_nav_menu( array(
+                            'theme_location' => 'social', 
+                            'menu_class' => false, 
+                            'container' => false, 
+                            'items_wrap' => '<ul>%3$s</ul>'
+                        ) ); 
+                    ?>
                 </div>
             </div>
         </div>
         <div class="container container_nav">
             <div class="container_inner">
                 <div class="search_form">
-                    <form action="/" method="get">
-                        <input type="search" value="" placeholder="Search">
-                        <button type="submit" value=""><i class="fa fa-search"></i></button>
-                    </form>
+                    <?php get_search_form(); ?>
                 </div>
                 <button class="search_switch"><i class="fa fa-search"></i></button>
                 <a class="logo" href="<?php echo get_home_url(); ?>">
@@ -69,12 +66,14 @@
                 </a>
                 <a class="nav-opener"><span></span></a>
                 <nav id="main_menu">
-                    <ul>
-                        <li><a href="#what_we_offer">What We Offer</a></li>
-                        <li><a href="#documentation">Documentation</a></li>
-                        <li><a href="#contacts">Contacts</a></li>
-                        <li><a href="#articles">Articles</a></li>
-                    </ul>
+                    <?php 
+                        wp_nav_menu( array(
+                            'theme_location' => 'main', 
+                            'menu_class' => false, 
+                            'container' => false, 
+                            'items_wrap' => '<ul>%3$s</ul>'
+                        ) ); 
+                    ?>
                 </nav>
             </div>
         </div>
