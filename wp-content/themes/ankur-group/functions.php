@@ -1,6 +1,14 @@
 <?php
 
+add_action('init', function () 
+{
+    remove_filter( 'the_content', 'wpautop' );
+	remove_action( 'wp_head', 'print_emoji_detection_script' );
+	remove_action( 'wp_print_styles', 'print_emoji_styles' );
+});
+
 require_once 'widgets/main_image.php';
+require_once 'functions/vc_shortcodes.php';
 
 remove_action( 'wp_head', 'wp_generator' );
 remove_action( 'wp_head', 'wlwmanifest_link' );

@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 //button More...
   $(".about_us button").click(function() {
-    $(this).addClass('inactive').next('div').slideDown(300);
+    $(this).addClass('inactive').closest('.button').next('.hidden_text').slideDown(300);
   });
 
 //resize menu on scroll
