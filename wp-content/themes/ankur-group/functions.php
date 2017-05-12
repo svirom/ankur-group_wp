@@ -8,9 +8,10 @@ add_action('init', function ()
 });
 
 require_once 'widgets/main_image.php';
-require_once 'functions/vc_shortcodes.php';
-require_once 'functions/vc_aircrafts.php';
 require_once 'functions/post_types.php';
+require_once 'functions/vc_partners.php';
+require_once 'functions/vc_whatweoffer.php';
+require_once 'functions/vc_documents.php';
 
 remove_action( 'wp_head', 'wp_generator' );
 remove_action( 'wp_head', 'wlwmanifest_link' );

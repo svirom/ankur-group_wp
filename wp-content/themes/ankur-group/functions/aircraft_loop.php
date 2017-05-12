@@ -6,7 +6,7 @@ $loop_air = new WP_Query( array(
     ) ); ?>
 
 <div class="offer_item">
-    <img src="img/icon_aircraft.png" alt="Aircraft">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/icon_aircraft.png" alt="Aircraft">
     <h4>Aircraft</h4>
     <p>Mauris pretium elementum maur Donec placeraterat at dignissim blanditaugue purus eleifend.</p>
 </div>
@@ -31,6 +31,8 @@ $loop_air = new WP_Query( array(
     			</div>
 				<?php endwhile; ?> 
         	</div>
+        	<div class='prev'><img src='<?php echo get_template_directory_uri(); ?>/img/arrow_left.png' alt='Arrow'></div>
+        	<div class='next'><img src='<?php echo get_template_directory_uri(); ?>/img/arrow_right.png' alt='Arrow'></div>
    		</div>
     	<div id="air_sale_form" class="sale_form">
         	<form id="aircraft_form" action="/" method="post">

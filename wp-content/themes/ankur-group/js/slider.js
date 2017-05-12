@@ -21,7 +21,7 @@
 				/*------------------------------------------------*/
 				
 				//add arrows to sliders
-				$this.find('.slides').after("<div class='prev'><img src='img/arrow_left.png' alt='Arrow'></div><div class='next'><img src='img/arrow_right.png' alt='Arrow'></div>");
+				//$this.find('.slides').after("<div class='prev'><img src='img/arrow_left.png' alt='Arrow'></div><div class='next'><img src='img/arrow_right.png' alt='Arrow'></div>");
 
 				$this.find('.slides').css({
 					'width': NumberOfSlides * slideWidth,

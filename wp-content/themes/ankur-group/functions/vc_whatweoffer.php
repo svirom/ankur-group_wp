@@ -1,5 +1,5 @@
 <?php
-/*-------------------------Partners Images----------------------------------*/
+/*-------------------------What We Offer shortcode----------------------------------*/
 add_shortcode( 'what_we_offer', function( $atts, $content ) {
     $atts = shortcode_atts(
         array(
@@ -13,6 +13,10 @@ add_shortcode( 'what_we_offer', function( $atts, $content ) {
     ob_start();
     
     include('aircraft_loop.php');
+    include('helicopter_loop.php');
+    include('equipments_loop.php');
+    include('services_loop.php');
+    include('components_loop.php');
 
     return ob_get_clean();
      
@@ -37,4 +41,4 @@ add_action( 'vc_before_init', function() {
         )
     );
 } );
-/*-------------------------Partners Images----------------------------------*/
+/*-------------------------What We Offer shortcode----------------------------------*/

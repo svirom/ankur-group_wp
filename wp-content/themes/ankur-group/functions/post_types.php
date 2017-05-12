@@ -47,46 +47,73 @@ add_action( 'init', function() {
     register_post_type('helicopter', $args);
 } );
 
-/*add_action( 'init', function() {
+add_action( 'init', function() {
     $labels = array(
-        'name' => 'Рецепты (алког.)',
-        'singular_name' => 'Рецепт(алк)',
-        'add_new' => 'Добавить новый',
-        'add_new_item' => 'Добавить новый рецепт(алк)',
-        'edit_item' => 'Редактировать рецепт',
-        'new_item' => 'Новый рецепт(алк)',
-        'view' => 'Смотреть',
-        'view_item' => 'Смотреть рецепт(алк)',
+        'name' => 'Equipments',
+        'singular_name' => 'Equipment',
+        'add_new' => 'Add new',
+        'add_new_item' => 'Add new equipment',
+        'edit_item' => 'Edit equipment',
+        'new_item' => 'New equipment',
+        'view_item' => 'View equipment',
+        'view_items' => 'View equipments',
     );
     $args = array(
         'labels' => $labels,
         'public' => true,
-        'menu_icon' => 'dashicons-star-filled',
-        'menu_position' => 4,
+        'show_in_menu' => true,
+        'menu_icon' => 'dashicons-networking',
+        'menu_position' => 5,
         'has_archive' => true,
-        'supports' => array( 'title', 'editor', 'thumbnail',),
+        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt'),
     );
-    register_post_type('receipt_a', $args);
+    register_post_type('equipment', $args);
 } );
 
 add_action( 'init', function() {
     $labels = array(
-        'name' => 'Партнеры',
-        'singular_name' => 'Партнер',
-        'add_new' => 'Добавить новый',
-        'add_new_item' => 'Добавить нового партнера',
-        'edit_item' => 'Редактировать запись',
-        'new_item' => 'Новый партнер',
-        'view' => 'Смотреть',
-        'view_item' => 'Смотреть запись',
+        'name' => 'Services',
+        'singular_name' => 'Service',
+        'add_new' => 'Add new',
+        'add_new_item' => 'Add new service',
+        'edit_item' => 'Edit service',
+        'new_item' => 'New service',
+        'view_item' => 'View service',
+        'view_items' => 'View services',
     );
     $args = array(
         'labels' => $labels,
         'public' => true,
-        'menu_icon' => 'dashicons-businessman',
-        'menu_position' => 4,
+        'show_in_menu' => true,
+        'menu_icon' => 'dashicons-admin-generic',
+        'menu_position' => 5,
         'has_archive' => true,
-        'supports' => array( 'title', 'editor', 'thumbnail',),
+        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt'),
     );
-    register_post_type('partner', $args);
-} );*/
+    register_post_type('services', $args);
+} );
+
+add_action( 'init', function() {
+    $labels = array(
+        'name' => 'Components',
+        'singular_name' => 'Component',
+        'add_new' => 'Add new',
+        'add_new_item' => 'Add new component',
+        'edit_item' => 'Edit component',
+        'new_item' => 'New component',
+        'view_item' => 'View component',
+        'view_items' => 'View components',
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'show_in_menu' => true,
+        'menu_icon' => 'dashicons-admin-tools',
+        'menu_position' => 5,
+        'has_archive' => true,
+        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt'),
+    );
+    register_post_type('components', $args);
+} );
+
+
