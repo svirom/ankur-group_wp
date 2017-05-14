@@ -12,6 +12,8 @@ require_once 'functions/post_types.php';
 require_once 'functions/vc_partners.php';
 require_once 'functions/vc_whatweoffer.php';
 require_once 'functions/vc_documents.php';
+require_once 'functions/vc_articles.php';
+require_once 'functions/loadmore.php';
 
 remove_action( 'wp_head', 'wp_generator' );
 remove_action( 'wp_head', 'wlwmanifest_link' );
@@ -65,6 +67,11 @@ add_action( 'wp_enqueue_scripts', function () {
 add_action( 'wp_enqueue_scripts', function () {
  	wp_enqueue_script( 'script4', get_template_directory_uri() . '/js/image-widget.js', array('jquery') );
 } );
+//Ajax posts loading on main page
+function true_loadmore_scripts() {
+    wp_enqueue_script( 'true_loadmore', get_template_directory_uri() . '/js/loadmore.js', array('jquery') );
+}
+ add_action( 'wp_enqueue_scripts', 'true_loadmore_scripts' );
 
 //Main Menu
 add_action( 'after_setup_theme', function () {
@@ -73,5 +80,12 @@ add_action( 'after_setup_theme', function () {
 		'social' => 'Social menu' 
 	) );
 } );
+
+//Custom length of excerpt
+function custom_excerpt_length( $length ) {
+  return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 
 ?>

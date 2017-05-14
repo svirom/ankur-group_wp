@@ -93,7 +93,7 @@ $(document).ready(function() {
       }, 400);
     } else {
       $(this).prev('div').find('input').css('display', 'block').animate({
-        'width': '120'
+        'width': '110'
       }, 400);
       $(this).prev('div').animate({
         'marginRight': '70',

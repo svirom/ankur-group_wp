@@ -21,7 +21,7 @@ $loop_ser = new WP_Query( array(
 				<div id="post-<?php the_ID(); ?>" <?php post_class('slider_item'); ?>>
     			<?php the_title( '<h4>', '</h4>' ); ?>
     			<?php the_post_thumbnail('full'); ?>
-    			<?php the_content(); ?> 	
+    			<?php the_excerpt(); ?> 	
     			</div>
 				<?php endwhile; ?>            
             </div>
