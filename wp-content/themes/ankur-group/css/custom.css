@@ -459,7 +459,7 @@ footer .main_footer p { margin: 0;}
 /*-----------------End Single Article Page-------------------*/
 
 /*-----------------Post popup-----------------------*/
-.popup_post { display: none; position: fixed; top: 10%; left: 50%; width: 400px; height: auto; max-height:90%; margin-left:-200px; padding: 40px; border-radius: 2px; z-index: 999; overflow-y: auto; background-color: #fff;}
+.popup_post { display: none; position: fixed; top: 10%; bottom: 10%; left: 50%; width: 400px; height: auto; max-height:90%; margin-left:-200px; padding: 40px; border-radius: 2px; z-index: 999; overflow-y: auto; background-color: #fff;}
 .popup_post>a.popup_close { position: absolute; top: 14px; right: 14px; width: 21px; height: 21px; line-height: 1; background-color: #AAAFAB;}
 #wrapper { display: none; position: fixed; top: 0; height: 100%; bottom: 0; left: 0; right: 0; background: rgba(4,8,17,0.5); z-index: 101;}
 a.sell {display: block;}
