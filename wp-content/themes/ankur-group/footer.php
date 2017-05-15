@@ -23,6 +23,12 @@
     </div>
 <!-- End Message Box -->
 
+<div id="wrapper"></div>
+<div class="popup_post">
+    <div id="ajax-response"></div>
+    <a href="#" class="popup_close" data-js="close_form"><img src="<?php echo get_template_directory_uri(); ?>/img/popup_close.png"></a>
+</div>
+
 <?php wp_footer();?>
 </body>
 </html>

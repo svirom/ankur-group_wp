@@ -5,15 +5,15 @@ $loop_art = new WP_Query( array(
     'posts_per_page' => 4
     ) ); ?>
 
-
 <?php while ( $loop_art->have_posts() ) : $loop_art->the_post(); ?>  
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     	<?php the_post_thumbnail('full'); ?>
     	<?php the_title( '<h4>', '</h4>' ); ?>
-    	<?php the_excerpt(); ?> 	
+    	<?php the_excerpt(); ?>
+    	<a href="#" id="<?php the_ID(); ?>" class="ajax-post"><?php echo __('Open in popup'); ?></a> 	
     </article>
 <?php endwhile; ?>
-
+	
 <?php if (  $loop_art->max_num_pages > 1 ) : ?>
 	<script>
 		var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';
@@ -22,7 +22,7 @@ $loop_art = new WP_Query( array(
 		var max_pages = '<?php echo $loop_art->max_num_pages; ?>';
 	</script>
 	<div id="true_loadmore" class="more_articles">
-		<a href="#">More Articles<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+		<a href="#"><?php echo __('More Articles'); ?><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 	</div>
 <?php endif; ?>
 

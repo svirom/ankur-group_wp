@@ -67,12 +67,22 @@
                 <a class="nav-opener"><span></span></a>
                 <nav id="main_menu">
                     <?php 
+                    if ( is_front_page() ) {
                         wp_nav_menu( array(
                             'theme_location' => 'main', 
                             'menu_class' => false, 
                             'container' => false, 
                             'items_wrap' => '<ul>%3$s</ul>'
                         ) ); 
+                    }
+                    else {
+                        wp_nav_menu( array(
+                            'theme_location' => 'secondary', 
+                            'menu_class' => false, 
+                            'container' => false, 
+                            'items_wrap' => '<ul>%3$s</ul>'
+                        ) ); 
+                    }
                     ?>
                 </nav>
             </div>

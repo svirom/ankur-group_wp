@@ -150,4 +150,11 @@ $(document).ready(function() {
     
 });
 
+//Popup close
+  $('a[data-js="close_form"]').click(function(){
+    event.preventDefault();
+    $('#wrapper').fadeOut(200);
+    $('.popup_post').fadeOut(600);
+  });
+
 });

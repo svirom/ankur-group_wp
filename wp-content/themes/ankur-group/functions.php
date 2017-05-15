@@ -2,7 +2,7 @@
 
 add_action('init', function () 
 {
-    remove_filter( 'the_content', 'wpautop' );
+    //remove_filter( 'the_content', 'wpautop' );
 	remove_action( 'wp_head', 'print_emoji_detection_script' );
 	remove_action( 'wp_print_styles', 'print_emoji_styles' );
 });
@@ -14,6 +14,7 @@ require_once 'functions/vc_whatweoffer.php';
 require_once 'functions/vc_documents.php';
 require_once 'functions/vc_articles.php';
 require_once 'functions/loadmore.php';
+require_once 'functions/popup.php';
 
 remove_action( 'wp_head', 'wp_generator' );
 remove_action( 'wp_head', 'wlwmanifest_link' );
@@ -64,19 +65,22 @@ add_action( 'wp_enqueue_scripts', function () {
 add_action( 'wp_enqueue_scripts', function () {
  	wp_enqueue_script( 'script3', get_template_directory_uri() . '/js/custom.js', array('jquery') );
 } );
-add_action( 'wp_enqueue_scripts', function () {
- 	wp_enqueue_script( 'script4', get_template_directory_uri() . '/js/image-widget.js', array('jquery') );
-} );
 //Ajax posts loading on main page
 function true_loadmore_scripts() {
     wp_enqueue_script( 'true_loadmore', get_template_directory_uri() . '/js/loadmore.js', array('jquery') );
 }
- add_action( 'wp_enqueue_scripts', 'true_loadmore_scripts' );
+add_action( 'wp_enqueue_scripts', 'true_loadmore_scripts' );
+ //Ajax posts loading on main page
+function true_popup_scripts() {
+    wp_enqueue_script( 'functions-js', get_template_directory_uri() . '/js/popup.js', array('jquery') );
+}
+add_action( 'wp_enqueue_scripts', 'true_popup_scripts' );
 
 //Main Menu
 add_action( 'after_setup_theme', function () {
 	register_nav_menus( array( 
 		'main' => 'Main menu',
+		'secondary' => 'Secondary menu',
 		'social' => 'Social menu' 
 	) );
 } );

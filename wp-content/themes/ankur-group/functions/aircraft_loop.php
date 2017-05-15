@@ -23,12 +23,14 @@ $loop_air = new WP_Query( array(
     <div class="tab_panels">
     	<div id="air_selling" class="slider_air">
         	<div class="slides">
-        		<?php while ( $loop_air->have_posts() ) : $loop_air->the_post(); ?>  
+        		<?php while ( $loop_air->have_posts() ) : $loop_air->the_post(); ?>     
 				<div id="post-<?php the_ID(); ?>" <?php post_class('slider_item'); ?>>
-    			 <?php the_title( '<h4>', '</h4>' ); ?>
-    			 <?php the_post_thumbnail('full'); ?>
-    			 <?php the_excerpt(); ?> 	
-    			</div>
+                    <a href="#" id="<?php the_ID(); ?>" class="ajax-post sell"> 
+    			        <?php the_title( '<h4>', '</h4>' ); ?>
+    			        <?php the_post_thumbnail('full'); ?>
+    			        <?php the_excerpt(); ?>
+    			    </a>
+                </div>
 				<?php endwhile; ?> 
         	</div>
         	<div class='prev'><img src='<?php echo get_template_directory_uri(); ?>/img/arrow_left.png' alt='Arrow'></div>

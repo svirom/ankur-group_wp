@@ -19,9 +19,11 @@ $loop_equ = new WP_Query( array(
             <div class="slides">
             	<?php while ( $loop_equ->have_posts() ) : $loop_equ->the_post(); ?>  
 				<div id="post-<?php the_ID(); ?>" <?php post_class('slider_item'); ?>>
-    			<?php the_title( '<h4>', '</h4>' ); ?>
-    			<?php the_post_thumbnail('full'); ?>
-    			<?php the_excerpt(); ?> 	
+                    <a href="#" id="<?php the_ID(); ?>" class="ajax-post sell">
+    			        <?php the_title( '<h4>', '</h4>' ); ?>
+    			        <?php the_post_thumbnail('full'); ?>
+    			        <?php the_excerpt(); ?>
+                    </a> 	
     			</div>
 				<?php endwhile; ?>                
             </div> 
