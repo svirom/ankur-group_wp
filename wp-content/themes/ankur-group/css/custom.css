@@ -357,15 +357,18 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 #articles article:nth-of-type(4n) { margin-right: 0;}
 #articles article img { /*width: 100%;*/ max-width: 100%;}
 #articles article h4 { margin: 12px 0 0;}
-#articles article h4 + p { margin: 6px 0 24px;}
+#articles article p { margin: 6px 0;}
+#articles article p:last-child { margin-bottom: 6px; }
 #articles .more_articles a { float: right; position: relative; padding-right: 25px; color: #3B994E; text-transform: uppercase;}
 #articles .more_articles a i { position: absolute; right: 0; top: 4px;}
 @media (max-width: 800px){
 	#articles { padding: 58px 12px 46px;}
 	#articles .container_inner { padding: 0 20px; }
-	#articles article { float: none; width: 100%; height: auto; margin-bottom: 30px;}
+	#articles article { float: none; width: 100%; height: auto; margin-bottom: 40px;}
 	#articles article:after { content: ' '; display: block; clear: both;}
 	#articles article img { /*float: left; max-width: 192px; margin-right: 12px;*/}
+	#articles article .ajax-post,
+	#articles article .window-post { position: static; }
 	#articles .more_articles { width: 120px; margin: 0 auto;}
 	#articles .more_articles a { float: none; padding-right: 0;}
 	#articles .more_articles a i { display: none;}
