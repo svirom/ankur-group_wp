@@ -8,7 +8,7 @@ function theme_post_example_init() {
 
 /* Made Query */
 //$args = array( 'p' => $_POST['id'] );
-$args = array( 'p' => $_POST['id'],'post_type' => array( 'post', 'aircraft') );
+$args = array( 'p' => $_POST['id'],'post_type' => array( 'post', 'aircraft', 'helicopter', 'equipment', 'services', 'components' ) );
 $theme_post_query = new WP_Query( $args );
 while( $theme_post_query->have_posts() ) : $theme_post_query->the_post();
 ?>

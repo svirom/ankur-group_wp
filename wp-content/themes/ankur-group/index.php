@@ -3,10 +3,13 @@
 <div class="container articles_page">
 	<div class="container_inner">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<h2><?php the_title(); ?></h2> 
-		<?php the_post_thumbnail('full'); ?>
-		<?php the_content(); ?>
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<h2><?php the_title(); ?></h2> 
+			<?php the_post_thumbnail('full'); ?>
+			<?php the_content(); ?>
+		</article>
 	<?php endwhile; endif; ?>
+	<?php wp_reset_postdata(); ?>
 	</div>	
 </div>
 

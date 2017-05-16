@@ -68,11 +68,19 @@ add_action( 'wp_enqueue_scripts', function () {
 //Ajax posts loading on main page
 function true_loadmore_scripts() {
     wp_enqueue_script( 'true_loadmore', get_template_directory_uri() . '/js/loadmore.js', array('jquery') );
+    wp_localize_script( 'true_loadmore', 'PS', array( 
+        'ajaxurl' => admin_url( 'admin-ajax.php' ), 
+        )
+    );
 }
 add_action( 'wp_enqueue_scripts', 'true_loadmore_scripts' );
  //Ajax posts loading on main page
 function true_popup_scripts() {
     wp_enqueue_script( 'functions-js', get_template_directory_uri() . '/js/popup.js', array('jquery') );
+    wp_localize_script( 'functions-js', 'PJS', array( 
+        'ajaxurl' => admin_url( 'admin-ajax.php' ), 
+        )
+    );
 }
 add_action( 'wp_enqueue_scripts', 'true_popup_scripts' );
 
@@ -91,5 +99,13 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
+//limit of title length
+function maxWord($title){
+    global $post;
+    $title = $post->post_title;
+    if (str_word_count($title) >= 8 ) //set this to the maximum number of words
+    wp_die( __('Error: your post title is over the maximum word count.') );
+}
+add_action('publish_post', 'maxWord');
 
 ?>

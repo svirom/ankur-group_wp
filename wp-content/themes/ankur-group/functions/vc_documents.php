@@ -3,7 +3,7 @@
 add_shortcode( 'documents_images', function( $atts, $content ) {
     $atts = shortcode_atts(
         array(
-            'image' => $image,
+            'image' => 'image',
             'title' => 'title',
             ), 
         $atts, 'partners_images'
@@ -13,6 +13,7 @@ add_shortcode( 'documents_images', function( $atts, $content ) {
     $image_ids = explode(',',$atts['image']);
     $result = count($image_ids);
     $template_directory = get_template_directory_uri();
+    $output = '';
     // echo print_r($result); 
     $output .= '<div class="slider_docs"><div class="slides">';
     for( $i = 0; $i < $result; $i++ ) {

@@ -3,7 +3,7 @@
 add_shortcode( 'partners_images', function( $atts, $content ) {
     $atts = shortcode_atts(
         array(
-            'image' => $image,
+            'image' => 'image',
             'title' => 'title',
             ), 
         $atts, 'partners_images'
@@ -12,7 +12,8 @@ add_shortcode( 'partners_images', function( $atts, $content ) {
 
     $image_ids = explode(',',$atts['image']);
     $result = count($image_ids);
-    // echo print_r($result); 
+    // echo print_r($result);
+    $output = ''; 
     $output .= '<div><h4>' .$atts['title'].'</h4><div class="img">';
     for( $i = 0; $i < $result; $i++ ) {
         $images = wp_get_attachment_image_src( $image_ids[$i], 'full' );
