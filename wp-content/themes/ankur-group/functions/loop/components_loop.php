@@ -7,8 +7,7 @@ $loop_com = new WP_Query( array(
 
 <div class="offer_item left-10">
     <img src="<?php echo get_template_directory_uri(); ?>/img/icon_production.png" alt="Component production">
-        <h4><?php echo __('Component production'); ?></h4>
-        <p><?php echo __('Mauris pretium elementum maur Donec placeraterat at dignissim blanditaugue purus eleifend.'); ?></p>
+    <h4><?php echo __('Component production'); ?></h4>
 </div>
 <div class="offer_item_inner">
     <div class="breadcrumb">

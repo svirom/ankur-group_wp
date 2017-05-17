@@ -8,7 +8,6 @@ $loop_hel = new WP_Query( array(
 <div class="offer_item left-5">
     <img src="<?php echo get_template_directory_uri(); ?>/img/icon_helicopters.png" alt="Helicopters">
     <h4><?php echo __('Helicopters'); ?></h4>
-    <p><?php echo __('Mauris pretium elementum maur Donec placeraterat at dignissim blanditaugue purus eleifend.'); ?></p>
 </div>
 <div class="offer_item_inner">
     <div class="breadcrumb">
@@ -45,12 +44,12 @@ $loop_hel = new WP_Query( array(
                     <option value="sell_hel"><?php echo __('Sell helicopter'); ?></option>
                 </select>
                 <label for="hel_model"><?php echo __('Type here the model:'); ?></label>
-                <input type="text" name="model" placeholder="Model" id="hel_model">
+                <input type="text" name="model" placeholder="<?php echo __('Model'); ?>" id="hel_model">
                 <label for="hel_email"><?php echo __('Type here your email:'); ?></label>
-                <input type="email" name="email" placeholder="Email" id="hel_email" class="required">
+                <input type="email" name="email" placeholder="<?php echo __('Email'); ?>" id="hel_email" class="required">
                 <label for="hel_message"><?php echo __('Type here your message (name, contacts etc.):'); ?></label>
-                <textarea name="message" placeholder="Message" id="hel_message" class="required"></textarea>
-                <input type="submit" value="SEND">
+                <textarea name="message" placeholder="<?php echo __('Message'); ?>" id="hel_message" class="required"></textarea>
+                <input type="submit" value="<?php echo __('SEND'); ?>">
             </form>
         </div>
     </div>

@@ -8,7 +8,6 @@ $loop_equ = new WP_Query( array(
 <div class="offer_item left-5">
     <img src="<?php echo get_template_directory_uri(); ?>/img/icon_equipment.png" alt="Ground-based equipment">
     <h4><?php echo __('Ground-based equipment'); ?></h4>
-    <p><?php echo __('Mauris pretium elementum maur Donec placeraterat at dignissim blanditaugue purus eleifend.'); ?></p>
 </div>
 <div class="offer_item_inner">
     <div class="breadcrumb">

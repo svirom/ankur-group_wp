@@ -8,7 +8,6 @@ $loop_air = new WP_Query( array(
 <div class="offer_item">
     <img src="<?php echo get_template_directory_uri(); ?>/img/icon_aircraft.png" alt="Aircraft">
     <h4><?php echo __('Aircraft'); ?></h4>
-    <p><?php echo __('Mauris pretium elementum maur Donec placeraterat at dignissim blanditaugue purus eleifend.'); ?></p>
 </div>
 <div class="offer_item_inner">
     <div class="breadcrumb">
@@ -45,12 +44,12 @@ $loop_air = new WP_Query( array(
                 	<option value="sell_air"><?php echo __('Sell aircraft'); ?></option>
             	</select>
             	<label for="air_model"><?php echo __('Type here the model:'); ?></label>
-            	<input type="text" name="model" placeholder="Model" id="air_model">
+            	<input type="text" name="model" placeholder="<?php echo __('Model'); ?>" id="air_model">
             	<label for="air_email"><?php echo __('Type here your email:'); ?></label>
-            	<input type="email" name="email" placeholder="Email" id="air_email" class="required">
+            	<input type="email" name="email" placeholder="<?php echo __('Email'); ?>" id="air_email" class="required">
             	<label for="air_message"><?php echo __('Type here your message (name, contacts etc.):'); ?></label>
-            	<textarea name="message" placeholder="Message" id="air_message" class="required"></textarea>
-            	<input type="submit" value="SEND">
+            	<textarea name="message" placeholder="<?php echo __('Message'); ?>" id="air_message" class="required"></textarea>
+            	<input type="submit" value="<?php echo __('SEND'); ?>">
         	</form>
     	</div>
 	</div>

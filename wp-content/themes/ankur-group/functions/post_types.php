@@ -19,7 +19,7 @@ add_action( 'init', function() {
         'menu_icon' => 'dashicons-controls-forward',
         'menu_position' => 5,
         'has_archive' => true,
-        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt'),
+        'supports' => array( 'title', 'editor', 'thumbnail'),
     );
     register_post_type('aircraft', $args);
 } );
@@ -42,7 +42,7 @@ add_action( 'init', function() {
         'menu_icon' => 'dashicons-controls-skipforward',
         'menu_position' => 5,
         'has_archive' => true,
-        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt'),
+        'supports' => array( 'title', 'editor', 'thumbnail'),
     );
     register_post_type('helicopter', $args);
 } );
@@ -65,7 +65,7 @@ add_action( 'init', function() {
         'menu_icon' => 'dashicons-networking',
         'menu_position' => 5,
         'has_archive' => true,
-        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt'),
+        'supports' => array( 'title', 'editor', 'thumbnail'),
     );
     register_post_type('equipment', $args);
 } );
@@ -88,7 +88,7 @@ add_action( 'init', function() {
         'menu_icon' => 'dashicons-admin-generic',
         'menu_position' => 5,
         'has_archive' => true,
-        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt'),
+        'supports' => array( 'title', 'editor', 'thumbnail'),
     );
     register_post_type('services', $args);
 } );
@@ -111,7 +111,7 @@ add_action( 'init', function() {
         'menu_icon' => 'dashicons-admin-tools',
         'menu_position' => 5,
         'has_archive' => true,
-        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt'),
+        'supports' => array( 'title', 'editor', 'thumbnail'),
     );
     register_post_type('components', $args);
 } );

@@ -35,11 +35,7 @@
                 </a>
                 <div class="social">
                     <p><i class="fa fa-map-marker" aria-hidden="true"></i>1835 E. Hallandale Beach Dlvd #332, USA, FL. 33009</p>
-                    <select>
-                        <option>Eng</option>
-                        <option>Pt</option>
-                        <option>Ru</option>
-                    </select>
+                    <?php qtranxf_generateLanguageSelectCode('dropdown', 'language'); ?>
                     <?php 
                         wp_nav_menu( array(
                             'theme_location' => 'social', 
