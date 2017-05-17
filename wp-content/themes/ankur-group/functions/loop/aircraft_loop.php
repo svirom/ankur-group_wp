@@ -7,17 +7,17 @@ $loop_air = new WP_Query( array(
 
 <div class="offer_item">
     <img src="<?php echo get_template_directory_uri(); ?>/img/icon_aircraft.png" alt="Aircraft">
-    <h4>Aircraft</h4>
-    <p>Mauris pretium elementum maur Donec placeraterat at dignissim blanditaugue purus eleifend.</p>
+    <h4><?php echo __('Aircraft'); ?></h4>
+    <p><?php echo __('Mauris pretium elementum maur Donec placeraterat at dignissim blanditaugue purus eleifend.'); ?></p>
 </div>
 <div class="offer_item_inner">
     <div class="breadcrumb">
-        <p><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> back</a>Aircraft</p>
+        <p><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> <?php echo __('back'); ?></a><?php echo __('Aircraft'); ?></p>
     </div>
     <div class="tab_list">
         <ul>
-        	<li class="active"><a href="#air_selling">Selling</a></li>
-            <li><a href="#air_sale_form">Contact us to purchase/sell aircraft</a></li>
+        	<li class="active"><a href="#air_selling"><?php echo __('Selling'); ?></a></li>
+            <li><a href="#air_sale_form"><?php echo __('Contact us to purchase/sell aircraft'); ?></a></li>
         </ul>
     </div>
     <div class="tab_panels">
@@ -38,17 +38,17 @@ $loop_air = new WP_Query( array(
    		</div>
     	<div id="air_sale_form" class="sale_form">
         	<form id="aircraft_form" action="/" method="post">
-            	<label for="air_sale_select">You want to:</label>
+            	<label for="air_sale_select"><?php echo __('You want to:'); ?></label>
             	<select id="air_sale_select" name="sel" class="required">
                 	<option value="0"></option>
-                	<option value="buy_air">Buy aircraft</option>
-                	<option value="sell_air">Sell aircraft</option>
+                	<option value="buy_air"><?php echo __('Buy aircraft'); ?></option>
+                	<option value="sell_air"><?php echo __('Sell aircraft'); ?></option>
             	</select>
-            	<label for="air_model">Type here the model:</label>
+            	<label for="air_model"><?php echo __('Type here the model:'); ?></label>
             	<input type="text" name="model" placeholder="Model" id="air_model">
-            	<label for="air_email">Type here your email:</label>
+            	<label for="air_email"><?php echo __('Type here your email:'); ?></label>
             	<input type="email" name="email" placeholder="Email" id="air_email" class="required">
-            	<label for="air_message">Type here your message (name, contacts etc.):</label>
+            	<label for="air_message"><?php echo __('Type here your message (name, contacts etc.):'); ?></label>
             	<textarea name="message" placeholder="Message" id="air_message" class="required"></textarea>
             	<input type="submit" value="SEND">
         	</form>

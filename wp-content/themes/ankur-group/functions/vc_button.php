@@ -1,28 +1,25 @@
 <?php
-/*-------------------------Articles shortcode----------------------------------*/
-add_shortcode( 'articles', function( $atts, $content ) {
+/*-------------------------Button More----------------------------------*/
+add_shortcode( 'button_more', function( $atts, $content ) {
     $atts = shortcode_atts(
         array(
             'title' => 'title',
             ), 
-        $atts, 'articles'
+        $atts, 'button_more'
     );
-
-    //echo print_r($atts);
+   
+    $button = __('MORE...');
+    $output = '<button>' . $button . '</button>'; 
     
-    ob_start();
-    
-    include('loop/articles_loop.php');
-
-    return ob_get_clean();
-     
+    return $output;    
+ 
 } );
 
 add_action( 'vc_before_init', function() {
     vc_map(
         array(
-            'name' => __( 'Articles' ),
-            'base' => 'articles',
+            'name' => __( 'Button More' ),
+            'base' => 'button_more',
             'params' => array(
                 array(
                     'type' => 'textfield',
@@ -37,4 +34,4 @@ add_action( 'vc_before_init', function() {
         )
     );
 } );
-/*-------------------------Articles shortcode----------------------------------*/
+/*-------------------------Button More----------------------------------*/

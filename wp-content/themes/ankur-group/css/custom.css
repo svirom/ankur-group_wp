@@ -169,7 +169,7 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 .about_us button:hover,
 .about_us button:active { text-decoration: underline; -webkit-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); cursor: pointer; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
 .about_us button + div { display: none; }
-.about_us button + div p:first-child { margin-top: 0; }
+/*.about_us button + div p:first-child { margin-top: 0; }*/
 .about_us button.inactive { display: none; }
 .about_us .img {}
 .about_us .img img { width:24%; padding: 22px 42px; vertical-align: middle; text-align: center;}
@@ -459,7 +459,7 @@ footer .main_footer p { margin: 0;}
 /*-----------------End Single Article Page-------------------*/
 
 /*-----------------Post popup-----------------------*/
-.popup_post { display: none; position: fixed; top: 10%; bottom: 10%; left: 50%; width: 100%; max-width: 500px; height: auto; max-height:90%; padding: 40px; border-radius: 2px; z-index: 999; overflow-y: auto; background-color: #fff; -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); -o-transform: translate(-50%, 0); -moz-transform: translate(-50%, 0); transform: translate(-50%, 0);}
+.popup_post { display: none; position: fixed; top: 10%; bottom: 10%; left: 50%; width: 100%; max-width: 500px; height: auto; max-height:90%; padding: 40px; border-radius: 2px; -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1); -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1); box-shadow: 0px 0px 10px 0px rgba(0,0,0,1); z-index: 999; overflow-y: auto; background-color: #fff; -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); -o-transform: translate(-50%, 0); -moz-transform: translate(-50%, 0); transform: translate(-50%, 0);}
 .popup_post>a.popup_close { position: absolute; top: 14px; right: 14px; width: 21px; height: 21px; line-height: 1; background-color: #AAAFAB;}
 #wrapper { display: none; position: fixed; top: 0; height: 100%; bottom: 0; left: 0; right: 0; background: rgba(4,8,17,0.5); z-index: 101; overflow: hidden;}
 a.sell {display: block;}
@@ -467,5 +467,11 @@ a.sell {display: block;}
 	.popup_post { /*width: 100%; left: 0; margin-left: 0;*/ padding: 40px 20px;}
 }
 /*-----------------End Post popup-----------------------*/
+
+/*-----------------Sent message popup-----------------------*/
+.popup { display: none; position: fixed; top: 40%; left: 50%; padding: 20px 40px; border-radius: 5px; -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1); -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1); box-shadow: 0px 0px 10px 0px rgba(0,0,0,1); z-index: 999; background-color: #fff; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.popup>a.popup_close { position: absolute; top: 10px; right: 10px; width: 20px; height: 20px; line-height: 1.2; background-color: #AAAFAB;}
+.popup p { font-size: 22px; }
+/*-----------------End Sent message popup-----------------------*/
 
 .error-404 { text-align: center; font-size: 32px; line-height: 1.2;}

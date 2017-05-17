@@ -13,8 +13,10 @@ require_once 'functions/vc_partners.php';
 require_once 'functions/vc_whatweoffer.php';
 require_once 'functions/vc_documents.php';
 require_once 'functions/vc_articles.php';
+require_once 'functions/vc_button.php';
 require_once 'functions/loadmore.php';
 require_once 'functions/popup.php';
+require_once 'functions/sendmail.php';
 
 remove_action( 'wp_head', 'wp_generator' );
 remove_action( 'wp_head', 'wlwmanifest_link' );
@@ -60,7 +62,7 @@ add_action( 'wp_enqueue_scripts', function () {
  	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/slider.js', array('jquery') );
 } );
 add_action( 'wp_enqueue_scripts', function () {
- 	wp_enqueue_script( 'script2', get_template_directory_uri() . '/js/forms.js', array('jquery') );
+ 	wp_enqueue_script( 'script2', get_template_directory_uri() . '/js/sendmail.js', array('jquery') );
 } );
 add_action( 'wp_enqueue_scripts', function () {
  	wp_enqueue_script( 'script3', get_template_directory_uri() . '/js/custom.js', array('jquery') );

@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 //button More...
   $(".about_us button").click(function() {
-    $(this).addClass('inactive').closest('.button').next('.hidden_text').slideDown(300);
+    $(this).addClass('inactive').next('.hidden_text').slideDown(300);
   });
 
 //resize menu on scroll
@@ -154,7 +154,7 @@ $(document).ready(function() {
   $('a[data-js="close_form"]').click(function(){
     event.preventDefault();
     $('#wrapper').fadeOut(200);
-    $('.popup_post').fadeOut(600);
+    $(this).closest('div').fadeOut(600);
   });
 
 });

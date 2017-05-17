@@ -12,11 +12,11 @@ add_shortcode( 'what_we_offer', function( $atts, $content ) {
     
     ob_start();
     
-    include('aircraft_loop.php');
-    include('helicopter_loop.php');
-    include('equipments_loop.php');
-    include('services_loop.php');
-    include('components_loop.php');
+    include('loop/aircraft_loop.php');
+    include('loop/helicopter_loop.php');
+    include('loop/equipments_loop.php');
+    include('loop/services_loop.php');
+    include('loop/components_loop.php');
 
     return ob_get_clean();
      
