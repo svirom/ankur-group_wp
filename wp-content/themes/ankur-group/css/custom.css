@@ -25,6 +25,8 @@ h4 { font: 22px 'Open Sans', sans-serif; color: #424242;}
 }
 
 body { overflow-x: hidden; }
+select::-ms-expand { display: none; } /* remove arrow in IE10+ */
+textarea { overflow: auto; } /* to remove scroll bar in IE */
 
 .container { position: relative; width: 100%; max-width: 1900px; margin: 0 auto;}
 .container_inner { width: 100%; max-width: /*1088px*/1100px; margin: 0 auto; padding: 0 6px;}
@@ -233,7 +235,7 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 #what_we_offer .sale_form form input,
 #what_we_offer .sale_form form textarea { width: 100%; margin: 6px 0 13px; padding: 11px 14px; border: 1px solid #CFCFCF; font: 20px/24px 'Open Sans', sans-serif; color: #424242;}
 #what_we_offer .sale_form form textarea { height: 160px; resize: none;}
-#what_we_offer .sale_form form select { background: #FFFFFF url(../img/select_arrow.png) 95% center no-repeat;}
+#what_we_offer .sale_form form select { background: #FFFFFF url(../img/select_arrow.png) 95% center no-repeat; -moz-appearance: none;}
 #what_we_offer .sale_form form select:focus,
 #what_we_offer .sale_form form input:focus,
 #what_we_offer .sale_form form textarea:focus { -webkit-box-shadow: 0px 0px 1px 1px #CFCFCF; -moz-box-shadow: 0px 0px 1px 1px #CFCFCF; box-shadow: 0px 0px 1px 1px #CFCFCF;}
@@ -451,9 +453,12 @@ footer .main_footer p { margin: 0;}
 /*-----------------Single Article Page-------------------*/
 .single_article { padding: 60px 0 60px; background: #fff; }
 .single_article article { min-height: calc(100vh - 109px); text-align: center; }
-.single_article article h2 { margin-bottom: 40px; }
-.single_article article p { padding: 0 60px; }
+.single_article article img { float: left; margin: 0 20px 20px 40px; }
+.single_article article h2 { margin-bottom: 40px; padding-left: 40px; text-align: left; }
+.single_article article p { padding: 0 40px; text-align: justify; }
 @media (max-width: 800px){
+	.single_article article img { float: none; display: block; margin: 0 20px; }
+	.single_article article h2 { margin-bottom: 20px; padding-left: 20px; }
 	.single_article article p { padding: 0 20px; }
 }
 /*-----------------End Single Article Page-------------------*/

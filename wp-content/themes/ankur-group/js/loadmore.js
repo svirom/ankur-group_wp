@@ -2,8 +2,8 @@ jQuery(function($)
 {
 $(document).ready(function(){
 
-  $('#true_loadmore a').click(function(){
-    event.preventDefault();
+  $('#true_loadmore a').click(function(e){
+    e.preventDefault();
     $(this).html('<a href="#">Downloading...<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>'); // изменяем текст кнопки, вы также можете добавить прелоадер
     var data = {
       'action': 'loadmore',

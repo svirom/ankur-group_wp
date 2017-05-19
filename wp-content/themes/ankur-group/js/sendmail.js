@@ -6,10 +6,10 @@ $(document).ready(function() {
   $('#contacts_form').submit(contacts_form);
   $('#msg_form').submit(msg_form);
 
-  function contacts_form() {
+  function contacts_form(e) {
     var $this = $(this);
     var fields = '.required';
-    event.preventDefault();
+    e.preventDefault();
     $this.find(fields).each(function() {
       if ($(this).val() == 0) {
         $(this).addClass('error');
@@ -47,10 +47,10 @@ $(document).ready(function() {
     return false;
   }
 
-  function msg_form() {
+  function msg_form(e) {
     var $this = $(this);
     var fields = '.required';
-    event.preventDefault();
+    e.preventDefault();
     $this.find(fields).each(function() {
       if ($(this).val() == 0) {
         $(this).addClass('error');
@@ -93,10 +93,10 @@ $(document).ready(function() {
   $('#aircraft_form').submit(air_send_form);
   $('#helicopter_form').submit(hel_send_form);
 
-  function air_send_form() {
+  function air_send_form(e) {
     var $this = $(this);
     var fields = '.required';
-    event.preventDefault();
+    e.preventDefault();
     $this.find(fields).each(function() {
       if ($(this).val() == 0) {
         $(this).addClass('error');
@@ -137,10 +137,10 @@ $(document).ready(function() {
     return false;
   }
 
-  function hel_send_form() {
+  function hel_send_form(e) {
     var $this = $(this);
     var fields = '.required';
-    event.preventDefault();
+    e.preventDefault();
     $this.find(fields).each(function() {
       if ($(this).val() == 0) {
         $(this).addClass('error');

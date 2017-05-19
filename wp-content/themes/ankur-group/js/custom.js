@@ -68,7 +68,7 @@ $(document).ready(function() {
     if ($('body').width() < 784)
       $('nav#main_menu>ul').css("display", "none");
     $('a.nav-opener').removeClass('nav-active');
-    //$('.offer_item_inner').css('display', 'none');
+    $('.offer_item_inner').css('display', 'none');
     if ($('body').width() >= 784)
       $('nav#main_menu>ul').css("display", "block");
   });
@@ -133,26 +133,26 @@ $(document).ready(function() {
 //tab panel in what we offer section
   $('.tab_list a[href^="#"]').click(tabs);
 
-  function tabs() {
-    var t = $(this);
-    event.preventDefault();
-    t.closest('ul').find('li').removeClass('active');
-    t.closest('li').addClass('active');
-    t.closest('.tab_list').next('.tab_panels').children('div').css('display', 'none');
+  function tabs(e) {
+    var $this = $(this);
+    e.preventDefault();
+    $this.closest('ul').find('li').removeClass('active');
+    $this.closest('li').addClass('active');
+    $this.closest('.tab_list').next('.tab_panels').children('div').css('display', 'none');
     $(this.hash).fadeIn(500);
   }
 
 //message box
-  $('.msg_box a').click(function(){
-    event.preventDefault();
+  $('.msg_box a').click(function(e){
+    e.preventDefault();
     $(this).siblings('.contact_form').slideToggle(300);
   })
     
 });
 
 //Popup close
-  $('a[data-js="close_form"]').click(function(){
-    event.preventDefault();
+  $('a[data-js="close_form"]').click(function(e){
+    e.preventDefault();
     $('#wrapper').fadeOut(200);
     $(this).closest('div').fadeOut(600);
   });
