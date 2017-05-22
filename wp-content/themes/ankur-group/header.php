@@ -24,6 +24,9 @@
     <?php endif?>
 </head>
 <body <?php body_class(); ?>>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
 
 <!-- Header section -->
     <header class="main_header">    

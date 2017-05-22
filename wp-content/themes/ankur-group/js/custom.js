@@ -2,6 +2,13 @@ jQuery(function($)
 {
 $(document).ready(function() {
 
+//Preloader
+var hidePreloader = function() {
+    $("#loader").fadeOut();
+    $("#loader-wrapper").delay(200).fadeOut("slow");
+};
+    hidePreloader();
+
 //sliders
   $('.slider_air').slider();
   $('.slider_hel').slider();
