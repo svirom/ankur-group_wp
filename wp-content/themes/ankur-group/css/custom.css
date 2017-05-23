@@ -12,7 +12,7 @@ body { margin: 0; border: 0; padding: 0; outline: 0; vertical-align: baseline; b
 input, button, textarea, select { -webkit-appearance: none; outline: none;}
 h1, h2, h3, h4, h5, h6 { font-weight:normal;}
 ol, ul, li { list-style: none; margin: 0; padding: 0;}
-img { max-width: 100%; border: none; outline: none;}
+img { max-width: 100%; height: auto; border: none; outline: none;}
 a, a:link, a:visited { color: #0264a9; font-weight: normal; text-decoration: none; outline: none;}
 /*----------------- End CSS reset-------------------*/
 
@@ -225,7 +225,7 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 #what_we_offer .offer_item_inner .tab_panels>div:first-of-type { display: block;}
 #what_we_offer .offer_item_inner .tab_panels>div:after { content: ' '; display: block; clear: both;}
 #what_we_offer .offer_item_inner .tab_panels .slider_item { float: left; position: relative;/*width: 100%;*/padding: 0 5px;}
-#what_we_offer .offer_item_inner .tab_panels .slider_item p { /*font-size: 20px;*/color: #424242;}
+#what_we_offer .offer_item_inner .tab_panels .slider_item p { padding-right: 10px; color: #424242;}
 #what_we_offer .offer_item_inner .tab_panels .slider_item ul li:before { padding-right: 12px; content: "\f105"; font: 14px FontAwesome; color: #0D681F;}
 #what_we_offer .offer_item_inner .tab_panels .slider_item ul {}
 #what_we_offer .offer_item_inner .tab_panels .slider_item ul li { color: #0D681F;}
@@ -464,13 +464,20 @@ footer .main_footer p { margin: 0;}
 /*-----------------Single Article Page-------------------*/
 .single_article { padding: 60px 0 60px; background: #fff; }
 .single_article article { min-height: calc(100vh - 109px); text-align: center; }
-.single_article article img { float: left; margin: 0 20px 20px 40px; }
+.single_article article img { /*float: left;*/ display: block; margin: 0 20px 20px 40px; }
 .single_article article h2 { margin-bottom: 40px; padding-left: 40px; text-align: left; }
 .single_article article p { padding: 0 40px; text-align: justify; }
+.single_article table { width: 100%; max-width: 560px; margin-left: 40px; text-align: left; border-collapse: collapse;}
+.single_article td { padding-left: 12px; border: 1px solid #AAAFAB; }
 @media (max-width: 800px){
-	.single_article article img { float: none; display: block; margin: 0 20px; }
+	.single_article article { overflow-x: auto; }
+	.single_article article img { /*float: none;*/ display: block; max-width: 90%; margin: 0 20px; }
 	.single_article article h2 { margin-bottom: 20px; padding-left: 20px; }
 	.single_article article p { padding: 0 20px; }
+	.single_article table,
+	#ajax-response table { width: auto; margin: 0 20px;}
+	.single_article td,
+	#ajax-response td { font-size: 14px; }
 }
 /*-----------------End Single Article Page-------------------*/
 
@@ -479,8 +486,12 @@ footer .main_footer p { margin: 0;}
 .popup_post>a.popup_close { position: absolute; top: 14px; right: 14px; width: 21px; height: 21px; line-height: 1; background-color: #AAAFAB;}
 #wrapper { display: none; position: fixed; top: 0; height: 100%; bottom: 0; left: 0; right: 0; background: rgba(4,8,17,0.5); z-index: 101; overflow: hidden;}
 a.sell {display: block;}
+#ajax-response table { width: 100%; max-width: 560px; margin: 0; text-align: left; border-collapse: collapse;  overflow-x: auto;}
+#ajax-response td { padding-left: 12px; border: 1px solid #AAAFAB; }
 @media (max-width: 800px){
 	.popup_post { /*width: 100%; left: 0; margin-left: 0;*/ padding: 40px 20px;}
+	#ajax-response table { width: auto; }
+	#ajax-response td { font-size: 14px; }
 }
 /*-----------------End Post popup-----------------------*/
 
