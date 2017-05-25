@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Ankur-group\n"
-"POT-Creation-Date: 2017-05-17 15:52+0300\n"
-"PO-Revision-Date: 2017-05-17 15:53+0300\n"
+"POT-Creation-Date: 2017-05-25 12:27+0300\n"
+"PO-Revision-Date: 2017-05-25 12:28+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -25,18 +25,18 @@ msgstr "Запрашиваемая вами страница не существ
 msgid "Name"
 msgstr "Имя"
 
-#: footer.php:18 functions/loop/aircraft_loop.php:50
-#: functions/loop/helicopter_loop.php:50
+#: footer.php:18 functions/loop/aircraft_loop.php:49
+#: functions/loop/helicopter_loop.php:49
 msgid "Email"
 msgstr "Эл.почта"
 
-#: footer.php:19 functions/loop/aircraft_loop.php:52
-#: functions/loop/helicopter_loop.php:52
+#: footer.php:19 functions/loop/aircraft_loop.php:51
+#: functions/loop/helicopter_loop.php:51
 msgid "Message"
 msgstr "Сообщение"
 
-#: footer.php:20 functions/loop/aircraft_loop.php:53
-#: functions/loop/helicopter_loop.php:53
+#: footer.php:20 functions/loop/aircraft_loop.php:52
+#: functions/loop/helicopter_loop.php:52
 msgid "SEND"
 msgstr "Отправить"
 
@@ -48,62 +48,54 @@ msgstr "Ваше сообщение отправлено"
 msgid "Error: your post title is over the maximum word count."
 msgstr "Заголовок вашей публикации слишком длинный, пожалуйста, сократите его."
 
-#: functions/loadmore.php:14
+#: functions/loadmore.php:14 functions/popup.php:20
 msgid "Open in new window"
 msgstr "Открыть в новом окне"
 
-#: functions/loop/aircraft_loop.php:10 functions/loop/aircraft_loop.php:15
+#: functions/loop/aircraft_loop.php:10 functions/loop/aircraft_loop.php:14
 #: functions/post_types.php:7
 msgid "Aircraft"
 msgstr "Самолеты"
 
-#: functions/loop/aircraft_loop.php:11 functions/loop/components_loop.php:11
-#: functions/loop/equipments_loop.php:11 functions/loop/helicopter_loop.php:11
-#: functions/loop/services_loop.php:11
-msgid ""
-"Mauris pretium elementum maur Donec placeraterat at dignissim blanditaugue "
-"purus eleifend."
-msgstr ""
-
-#: functions/loop/aircraft_loop.php:15 functions/loop/components_loop.php:15
-#: functions/loop/equipments_loop.php:15 functions/loop/helicopter_loop.php:15
-#: functions/loop/services_loop.php:15
+#: functions/loop/aircraft_loop.php:14 functions/loop/components_loop.php:14
+#: functions/loop/equipments_loop.php:14 functions/loop/helicopter_loop.php:14
+#: functions/loop/services_loop.php:14
 msgid "back"
 msgstr "назад"
 
-#: functions/loop/aircraft_loop.php:19 functions/loop/helicopter_loop.php:19
+#: functions/loop/aircraft_loop.php:18 functions/loop/helicopter_loop.php:18
 msgid "Selling"
 msgstr "Продажа"
 
-#: functions/loop/aircraft_loop.php:20
+#: functions/loop/aircraft_loop.php:19
 msgid "Contact us to purchase/sell aircraft"
 msgstr "Напишите нам для покупки/продажи самолета"
 
-#: functions/loop/aircraft_loop.php:41 functions/loop/helicopter_loop.php:41
+#: functions/loop/aircraft_loop.php:40 functions/loop/helicopter_loop.php:40
 msgid "You want to:"
 msgstr "Вы хотите:"
 
-#: functions/loop/aircraft_loop.php:44
+#: functions/loop/aircraft_loop.php:43
 msgid "Buy aircraft"
 msgstr "Купить самолет"
 
-#: functions/loop/aircraft_loop.php:45
+#: functions/loop/aircraft_loop.php:44
 msgid "Sell aircraft"
 msgstr "Продать самолет"
 
-#: functions/loop/aircraft_loop.php:47 functions/loop/helicopter_loop.php:47
+#: functions/loop/aircraft_loop.php:46 functions/loop/helicopter_loop.php:46
 msgid "Type here the model:"
 msgstr "Введите модель:"
 
-#: functions/loop/aircraft_loop.php:48 functions/loop/helicopter_loop.php:48
+#: functions/loop/aircraft_loop.php:47 functions/loop/helicopter_loop.php:47
 msgid "Model"
 msgstr "Модель"
 
-#: functions/loop/aircraft_loop.php:49 functions/loop/helicopter_loop.php:49
+#: functions/loop/aircraft_loop.php:48 functions/loop/helicopter_loop.php:48
 msgid "Type here your email:"
 msgstr "Введите ваш email:"
 
-#: functions/loop/aircraft_loop.php:51 functions/loop/helicopter_loop.php:51
+#: functions/loop/aircraft_loop.php:50 functions/loop/helicopter_loop.php:50
 msgid "Type here your message (name, contacts etc.):"
 msgstr "Введите свое сообщение ( имя, контакты и тд):"
 
@@ -115,32 +107,32 @@ msgstr "Открыть в окне"
 msgid "More Articles"
 msgstr "Больше статей"
 
-#: functions/loop/components_loop.php:10 functions/loop/components_loop.php:15
+#: functions/loop/components_loop.php:10 functions/loop/components_loop.php:14
 msgid "Component production"
 msgstr "Комплектующие"
 
-#: functions/loop/equipments_loop.php:10 functions/loop/equipments_loop.php:15
+#: functions/loop/equipments_loop.php:10 functions/loop/equipments_loop.php:14
 msgid "Ground-based equipment"
 msgstr "Наземное оборудование"
 
-#: functions/loop/helicopter_loop.php:10 functions/loop/helicopter_loop.php:15
+#: functions/loop/helicopter_loop.php:10 functions/loop/helicopter_loop.php:14
 #: functions/post_types.php:29
 msgid "Helicopters"
 msgstr "Вертолеты"
 
-#: functions/loop/helicopter_loop.php:20
+#: functions/loop/helicopter_loop.php:19
 msgid "Contact us to purchase/sell helicopter"
 msgstr "Напишите нам для покупки/продажи вертолета"
 
-#: functions/loop/helicopter_loop.php:44
+#: functions/loop/helicopter_loop.php:43
 msgid "Buy helicopter"
 msgstr "Купить вертолет"
 
-#: functions/loop/helicopter_loop.php:45
+#: functions/loop/helicopter_loop.php:44
 msgid "Sell helicopter"
 msgstr "Продать вертолет"
 
-#: functions/loop/services_loop.php:10 functions/loop/services_loop.php:15
+#: functions/loop/services_loop.php:10 functions/loop/services_loop.php:14
 #: functions/post_types.php:75
 msgid "Services"
 msgstr "Услуги"
@@ -222,6 +214,10 @@ msgstr "Совпадения не найдены. Попробуйте друг�
 #: searchform.php:2
 msgid "Search"
 msgstr "Поиск"
+
+#: single.php:9
+msgid "Published:"
+msgstr "Опубликовано:"
 
 #: widgets/main_image.php:7
 msgid "MainImage"
