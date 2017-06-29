@@ -3,8 +3,8 @@
 //Custom Post Types
 add_action( 'init', function() {
     $labels = array(
-        'name' => __('Aircrafts'),
-        'singular_name' => __('Aircraft'),
+        'name' => __('Aircrafts', 'ankur-group'),
+        'singular_name' => __('Aircraft', 'ankur-group'),
         'add_new' => 'Add new',
         'add_new_item' => 'Add new aircraft',
         'edit_item' => 'Edit aircraft',
@@ -26,8 +26,8 @@ add_action( 'init', function() {
 
 add_action( 'init', function() {
     $labels = array(
-        'name' => __('Helicopters'),
-        'singular_name' => __('Helicopter'),
+        'name' => __('Helicopters', 'ankur-group'),
+        'singular_name' => __('Helicopter', 'ankur-group'),
         'add_new' => 'Add new',
         'add_new_item' => 'Add new helicopter',
         'edit_item' => 'Edit helicopter',
@@ -49,8 +49,8 @@ add_action( 'init', function() {
 
 add_action( 'init', function() {
     $labels = array(
-        'name' => __('Equipments'),
-        'singular_name' => __('Equipment'),
+        'name' => __('Equipments', 'ankur-group'),
+        'singular_name' => __('Equipment', 'ankur-group'),
         'add_new' => 'Add new',
         'add_new_item' => 'Add new equipment',
         'edit_item' => 'Edit equipment',
@@ -72,8 +72,8 @@ add_action( 'init', function() {
 
 add_action( 'init', function() {
     $labels = array(
-        'name' => __('Services'),
-        'singular_name' => __('Service'),
+        'name' => __('Services', 'ankur-group'),
+        'singular_name' => __('Service', 'ankur-group'),
         'add_new' => 'Add new',
         'add_new_item' => 'Add new service',
         'edit_item' => 'Edit service',
@@ -95,8 +95,8 @@ add_action( 'init', function() {
 
 add_action( 'init', function() {
     $labels = array(
-        'name' => __('Components'),
-        'singular_name' => __('Component'),
+        'name' => __('Components', 'ankur-group'),
+        'singular_name' => __('Component', 'ankur-group'),
         'add_new' => 'Add new',
         'add_new_item' => 'Add new component',
         'edit_item' => 'Edit component',

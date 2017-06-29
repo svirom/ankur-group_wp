@@ -106,22 +106,14 @@ function maxWord($title){
     global $post;
     $title = $post->post_title;
     if (str_word_count($title) >= 8 ) //set this to the maximum number of words
-    wp_die( __('Error: your post title is over the maximum word count.') );
+    wp_die( __('Error: your post title is over the maximum word count.', 'ankur-group') );
 }
 add_action('publish_post', 'maxWord');
 
+//add theme translate
 add_action('after_setup_theme', 'true_load_theme_textdomain');
 function true_load_theme_textdomain(){
-    load_theme_textdomain( 'lang', get_template_directory_uri() . '/languages' );
+    load_theme_textdomain( 'ankur-group', get_template_directory() . '/languages' );
 }
-
-add_filter( 'locale', 'true_localize_theme' );
-function true_localize_theme( $locale ) {
-    if ( isset( $_GET['lang'] ) ) {
-        return esc_attr( $_GET['lang'] );
-    }
-    return $locale;
-}
-
 
 ?>

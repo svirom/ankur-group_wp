@@ -18,8 +18,8 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: languages\n"
 
 #: 404.php:6
-msgid "The page you requested does not exist. Try another option"
-msgstr "Запрашиваемая вами страница не существует. Попробуйте другой вариант"
+msgid 'The page you requested does not exist. Try another option'
+msgstr 'Запрашиваемая вами страница не существует. Попробуйте другой вариант'
 
 #: footer.php:17
 msgid "Name"

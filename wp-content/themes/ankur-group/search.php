@@ -11,7 +11,7 @@
 		</article>
 	<?php endwhile; ?>
 	<?php else : ?>
-		<p class="error-404"><?php echo __('There is no matches. Please try another option') ?></p>
+		<p class="error-404"><?php echo __('There is no matches. Please try another option', 'ankur-group') ?></p>
 	<?php endif; ?>
 	<?php wp_reset_postdata(); ?>
 	</div>	

@@ -11,7 +11,7 @@ function true_load_posts(){
     			<?php the_post_thumbnail('full'); ?>
     			<?php the_title( '<h4>', '</h4>' ); ?>
     			<?php the_excerpt(); ?>
-    			<a href="<?php the_permalink(); ?>" id="<?php the_ID(); ?>" class="window-post" target="_blank"><?php echo __('Open in new window'); ?></a> 	 	
+    			<a href="<?php the_permalink(); ?>" id="<?php the_ID(); ?>" class="window-post" target="_blank"><?php echo __('Open in new window', 'ankur-group'); ?></a> 	 	
     		</article>
 			<?php
 		endwhile;

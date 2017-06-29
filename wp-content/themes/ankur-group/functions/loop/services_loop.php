@@ -7,11 +7,11 @@ $loop_ser = new WP_Query( array(
 
 <div class="offer_item left-15">
     <img src="<?php echo get_template_directory_uri(); ?>/img/icon_support.png" alt="Support">
-    <h4><?php echo __('Services'); ?></h4>
+    <h4><?php echo __('Services', 'ankur-group'); ?></h4>
 </div>
 <div class="offer_item_inner">
     <div class="breadcrumb">
-        <p><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> <?php echo __('back'); ?></a><?php echo __('Services'); ?></p>
+        <p><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> <?php echo __('back', 'ankur-group'); ?></a><?php echo __('Services', 'ankur-group'); ?></p>
     </div>
    	<div class="tab_panels">
         <div id="support" class="slider_sup">

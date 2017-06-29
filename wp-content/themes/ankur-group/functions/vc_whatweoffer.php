@@ -25,17 +25,17 @@ add_shortcode( 'what_we_offer', function( $atts, $content ) {
 add_action( 'vc_before_init', function() {
     vc_map(
         array(
-            'name' => __( 'What We Offer' ),
+            'name' => __( 'What We Offer', 'ankur-group' ),
             'base' => 'what_we_offer',
             'params' => array(
                 array(
                     'type' => 'textfield',
                     'holder' => 'div',
                     'class' => '',
-                    'heading' => __( 'Title' ),
+                    'heading' => __( 'Title', 'ankur-group' ),
                     'param_name' => 'title',
                     'value' => __( '' ),
-                    'description' => __( 'Title' ),
+                    'description' => __( 'Title', 'ankur-group' ),
                 ),
             )
         )

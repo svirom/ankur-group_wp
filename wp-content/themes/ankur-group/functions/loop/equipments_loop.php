@@ -7,11 +7,11 @@ $loop_equ = new WP_Query( array(
 
 <div class="offer_item left-5">
     <img src="<?php echo get_template_directory_uri(); ?>/img/icon_equipment.png" alt="Ground-based equipment">
-    <h4><?php echo __('Ground-based equipment'); ?></h4>
+    <h4><?php echo __('Ground-based equipment', 'ankur-group'); ?></h4>
 </div>
 <div class="offer_item_inner">
     <div class="breadcrumb">
-        <p><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> <?php echo __('back'); ?></a><?php echo __('Ground-based equipment'); ?></p>
+        <p><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> <?php echo __('back', 'ankur-group'); ?></a><?php echo __('Ground-based equipment', 'ankur-group'); ?></p>
    	</div>
     <div class="tab_panels">
         <div id="equipment" class="slider_equip">

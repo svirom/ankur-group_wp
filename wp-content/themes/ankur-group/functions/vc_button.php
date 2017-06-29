@@ -8,7 +8,7 @@ add_shortcode( 'button_more', function( $atts, $content ) {
         $atts, 'button_more'
     );
    
-    $button = __('MORE...');
+    $button = __('MORE...', 'ankur-group');
     $output = '<button>' . $button . '</button>'; 
     
     return $output;    
@@ -18,17 +18,17 @@ add_shortcode( 'button_more', function( $atts, $content ) {
 add_action( 'vc_before_init', function() {
     vc_map(
         array(
-            'name' => __( 'Button More' ),
+            'name' => __( 'Button More', 'ankur-group' ),
             'base' => 'button_more',
             'params' => array(
                 array(
                     'type' => 'textfield',
                     'holder' => 'div',
                     'class' => '',
-                    'heading' => __( 'Title' ),
+                    'heading' => __( 'Title', 'ankur-group' ),
                     'param_name' => 'title',
                     'value' => __( '' ),
-                    'description' => __( 'Title' ),
+                    'description' => __( 'Title', 'ankur-group' ),
                 ),
             )
         )

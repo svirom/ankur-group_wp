@@ -29,26 +29,26 @@ add_shortcode( 'documents_images', function( $atts, $content ) {
 add_action( 'vc_before_init', function() {
     vc_map(
         array(
-            'name' => __( 'Documents Images' ),
+            'name' => __( 'Documents Images', 'ankur-group' ),
             'base' => 'documents_images',
             'params' => array(
                 array(
                     'type' => 'attach_images',
                     'holder' => 'div',
                     'class' => '',
-                    'heading' => __( 'Image' ),
+                    'heading' => __( 'Image', 'ankur-group' ),
                     'param_name' => 'image',
                     'value' => __( '' ),
-                    'description' => __( 'Image' ),
+                    'description' => __( 'Image', 'ankur-group' ),
                 ),
                 array(
                     'type' => 'textfield',
                     'holder' => 'div',
                     'class' => '',
-                    'heading' => __( 'Title' ),
+                    'heading' => __( 'Title', 'ankur-group' ),
                     'param_name' => 'title',
                     'value' => __( '' ),
-                    'description' => __( 'Title' ),
+                    'description' => __( 'Title', 'ankur-group' ),
                 ),
             )
         )
