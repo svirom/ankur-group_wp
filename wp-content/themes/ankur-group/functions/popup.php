@@ -15,7 +15,10 @@ while( $theme_post_query->have_posts() ) : $theme_post_query->the_post();
 	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php the_post_thumbnail('full'); ?>
     	<?php the_title( '<h4>', '</h4>' ); ?>
-		<div class="entry-content"><?php the_content(); ?></div><!-- end .entry-content -->
+		<div class="entry-content">
+			<?php the_content(); ?>
+			<a href="<?php the_permalink(); ?>" id="<?php the_ID(); ?>" class="window-post" target="_blank"><?php echo __('Open in new window'); ?></a>
+		</div><!-- end .entry-content -->
 	</div>
 <?php
 endwhile;

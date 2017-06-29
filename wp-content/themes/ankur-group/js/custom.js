@@ -2,6 +2,13 @@ jQuery(function($)
 {
 $(document).ready(function() {
 
+//Preloader
+var hidePreloader = function() {
+    $("#loader").fadeOut();
+    $("#loader-wrapper").delay(200).fadeOut("slow");
+};
+    hidePreloader();
+
 //sliders
   $('.slider_air').slider();
   $('.slider_hel').slider();
@@ -34,25 +41,25 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if (($(this).scrollTop() > 536) && ($('header.main_header').width() >= 784)) {
       $('header.main_header').removeClass('fixed_out').addClass('fixed').addClass('fixed_in');
-      $('.main_image, .articles_page').css('margin-top', '141px');
+      $('.main_image, .articles_page, .single_article').css('margin-top', '141px');
     } else
     if (($(this).scrollTop() <= 536) && ($(this).scrollTop() > 140) && ($('header.main_header').width() >= 784)) {
       $('header.main_header').removeClass('fixed_in').addClass('fixed_out');
     }
     if (($(this).scrollTop() <= 140) && ($('header.main_header').width() >= 784)) {
       $('header.main_header').removeClass('fixed_in').removeClass('fixed_out').removeClass('fixed');
-      $('.main_image, .articles_page').css('margin-top', '0px');
+      $('.main_image, .articles_page, .single_article').css('margin-top', '0px');
     }
     if (($(this).scrollTop() > 284) && ($('header.main_header').width() < 784)) {
       $('header.main_header').removeClass('fixed_out').addClass('fixed').addClass('fixed_in');
-      $('.main_image, .articles_page').css('margin-top', '64px');
+      $('.main_image, .articles_page, .single_article').css('margin-top', '64px');
     } else
     if (($(this).scrollTop() <= 284) && ($(this).scrollTop() > 64) && ($('header.main_header').width() < 784)) {
       $('header.main_header').removeClass('fixed_in').addClass('fixed_out');
     }
     if (($(this).scrollTop() <= 64) && ($('header.main_header').width() < 784)) {
       $('header.main_header').removeClass('fixed_in').removeClass('fixed_out').removeClass('fixed');
-      $('.main_image, .articles_page').css('margin-top', '0px');
+      $('.main_image, .articles_page, .single_article').css('margin-top', '0px');
     }
   });
 
