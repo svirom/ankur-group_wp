@@ -17,7 +17,7 @@ while( $theme_post_query->have_posts() ) : $theme_post_query->the_post();
     	<?php the_title( '<h4>', '</h4>' ); ?>
 		<div class="entry-content">
 			<?php the_content(); ?>
-			<a href="<?php the_permalink(); ?>" id="<?php the_ID(); ?>" class="window-post" target="_blank"><?php echo __('Open in new window'); ?></a>
+			<a href="<?php the_permalink(); ?>" id="<?php the_ID(); ?>" class="window-post" target="_blank"><?php echo __('Open in new window', 'ankur-group'); ?></a>
 		</div><!-- end .entry-content -->
 	</div>
 <?php
