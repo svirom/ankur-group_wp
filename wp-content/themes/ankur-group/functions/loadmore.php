@@ -8,7 +8,7 @@ function true_load_posts(){
 		while($q->have_posts()): $q->the_post();
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    			<?php the_post_thumbnail('full'); ?>
+    			<?php the_post_thumbnail(array(400,200)); ?>
     			<?php the_title( '<h4>', '</h4>' ); ?>
     			<?php the_excerpt(); ?>
     			<a href="<?php the_permalink(); ?>" id="<?php the_ID(); ?>" class="window-post" target="_blank"><?php echo __('Open in new window', 'ankur-group'); ?></a> 	 	

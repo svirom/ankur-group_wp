@@ -24,11 +24,11 @@ h4 { font: 22px 'Open Sans', sans-serif; color: #424242;}
 	h4 { font-size: 20px; }
 }
 
-body { overflow-x: hidden;}
+body { overflow-x: hidden; max-width: 1600px; margin: 0 auto;}
 select::-ms-expand { display: none; } /* remove arrow in IE10+ */
 textarea { overflow: auto; } /* to remove scroll bar in FF */
 
-.container { position: relative; width: 100%; max-width: 1900px; margin: 0 auto;}
+.container { position: relative; width: 100%; /*max-width: 1900px;*/ margin: 0 auto;}
 .container_inner { width: 100%; max-width: /*1088px*/1100px; margin: 0 auto; padding: 0 6px;}
 .container_inner:after { content: ' '; display: block; clear: both;}
 .container_nav {

@@ -13,7 +13,7 @@ $theme_post_query = new WP_Query( $args );
 while( $theme_post_query->have_posts() ) : $theme_post_query->the_post();
 ?>
 	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<?php the_post_thumbnail('full'); ?>
+		<?php the_post_thumbnail(array(500,300)); ?>
     	<?php the_title( '<h4>', '</h4>' ); ?>
 		<div class="entry-content">
 			<?php the_content(); ?>

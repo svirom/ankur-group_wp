@@ -6,7 +6,7 @@
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<h2><a href="<?php the_permalink(); ?>" id="<?php the_ID(); ?>" <?php post_class(); ?>><?php the_title(); ?></a></h2> 
-			<?php the_post_thumbnail('full'); ?>
+			<?php the_post_thumbnail(array(400,200)); ?>
 			<?php the_excerpt(); ?>
 		</article>
 	<?php endwhile; ?>

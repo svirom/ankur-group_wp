@@ -7,7 +7,7 @@ $loop_art = new WP_Query( array(
 
 <?php while ( $loop_art->have_posts() ) : $loop_art->the_post(); ?>  
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    	<?php the_post_thumbnail('full'); ?>
+    	<?php the_post_thumbnail(array(400,200)); ?>
     	<?php the_title( '<h4>', '</h4>' ); ?>
     	<?php the_excerpt(); ?>
     	<a href="#" id="<?php the_ID(); ?>" class="ajax-post"><?php echo __('Open in popup', 'ankur-group'); ?></a> 	
