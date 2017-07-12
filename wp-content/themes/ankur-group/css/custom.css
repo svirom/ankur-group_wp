@@ -60,8 +60,8 @@ header.main_header .container_nav a.logo_mobile img { height: 54px; }
 header.main_header a.logo img { float: left;}
 header.main_header a.logo p, 
 header a.logo h1 { float: left; margin: 0; padding-left: 16px; line-height: 63px; font: 400 24px/63px 'Josefin Sans', sans-serif; color: #003C0C; text-transform: uppercase;}
-header.main_header .social { float: right;}
-header.main_header .social p { margin: 0; font-size: 14px;}
+header.main_header .social { float: right; width: 40%;}
+header.main_header .social p { margin: 0; font-size: 14px; text-align: right;}
 header.main_header .social p i { padding-right: 6px;}
 header.main_header .social select { float: right; width: 80px; margin-top: 12px; padding-left: 15px; border: 0; font: 16px/34px 'Open Sans', sans-serif; color: #424242; outline:none; background: #FBFBFB url(../img/select_arrow.png) 57px center no-repeat; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 header.main_header .social ul { float: right; margin: 16px 30px 0 0;}
